@@ -1,10 +1,12 @@
-public abstract class User {
+public class User {
     private String name;
     private String lastname;
     private long cc;
     private String email;
 
-    public User(String name, String lastname, long cc, String email) {
+    protected String TipoUsuario;
+
+    public User(String name, String lastname, String email) {
         this.name = name;
         this.lastname = lastname;
         this.cc = cc;
