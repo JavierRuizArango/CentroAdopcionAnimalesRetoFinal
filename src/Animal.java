@@ -70,8 +70,8 @@ public abstract class Animal {
         return "El nombre es: "+ getName() + ", " +"La edad es: "+ getAge() + ", "+"La especie es: "+ getSpecies()+ ", "+"Vitalidad: " + getHealStatus() + ", " +"Descripcion:  "+ getDescription() + "," + "Disponible: "+ isAvailable();
     }
 
-    public abstract String mostrarDatos();
+    public abstract String showInfo();
 
-    public abstract String desplazar ();
+
 
 }

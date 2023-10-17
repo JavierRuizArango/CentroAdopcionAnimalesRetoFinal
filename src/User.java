@@ -1,17 +1,19 @@
-public class User {
+public abstract class User  implements IRegistrer {
     private String name;
     private String lastname;
     private long cc;
     private String email;
 
-    protected String TipoUsuario;
+    protected String userType;
 
-    public User(String name, String lastname, String email) {
+    public User() {
         this.name = name;
         this.lastname = lastname;
         this.cc = cc;
         this.email = email;
     }
+
+    public abstract void register();
 
     public String getName() {
 
@@ -52,4 +54,9 @@ public class User {
 
         this.email = email;
     }
+
+
+
+
+
 }

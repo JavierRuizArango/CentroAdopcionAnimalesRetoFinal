@@ -1,5 +1,5 @@
-public class Ave  extends Animal{
-    public Ave(String name, String age, String species, String healStatus, String description, boolean available) {
+public class Bird extends Animal{
+    public Bird(String name, String age, String species, String healStatus, String description, boolean available) {
         super(name, age, species, healStatus, description, available);
     }
 

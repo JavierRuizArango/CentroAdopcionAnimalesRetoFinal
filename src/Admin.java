@@ -1,11 +1,16 @@
-public class Administrator implements IRegistrarAnimal {
+public class Admin extends User implements IRegistrer {
     private String name;
     private String lastname;
     private long cc;
     private String email;
-    protected String TipoUsuario;
+    protected String userType;
 
-    public Administrator() {
+    public Admin() {
+        super();
+    }
+
+    @Override
+    public void register() {
     }
 
     public String getName() {
@@ -40,11 +45,29 @@ public class Administrator implements IRegistrarAnimal {
         this.email = email;
     }
 
-    public String getTipoUsuario() {
-        return TipoUsuario;
+    public String getUserType() {
+        return userType;
     }
 
-    public void setTipoUsuario(String tipoUsuario) {
-        TipoUsuario = tipoUsuario;
+    public void setUserType(String UserType) {
+        UserType = UserType;
+    }
+
+    public void createAnimal() {
+
+    }
+
+    public void upDateAnimal() {
+
+    }
+
+    public void deleteAnimal() {
+
+    }
+
+
+    @Override
+    public void registrer() {
+
     }
 }

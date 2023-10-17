@@ -7,10 +7,10 @@ public class Employee  extends User{
 
     protected String Roll;
 
-    protected String tipoUsuario;
+    protected String usertype;
 
     public Employee(String name, String lastname, long cc, String email) {
-        super(name, lastname, email);
+        super();
     }
 
     @Override
@@ -61,11 +61,32 @@ public class Employee  extends User{
         Roll = roll;
     }
 
-    public String getTipoUsuario() {
-        return tipoUsuario;
+    public String getUsertype() {
+        return usertype;
     }
 
-    public void setTipoUsuario(String tipoUsuario) {
-        this.tipoUsuario = tipoUsuario;
+    public void setUsertype(String userType) {
+        this.usertype = usertype;
+    }
+
+    @Override
+    public void createAdoptionProcess() {
+        //pendiente
+    }
+
+    @Override
+    public void readAdoptionProcess() {
+        //pendiente
+
+    }
+
+    @Override
+    public void updateAdoptionProcess() {
+        //pendiente
+    }
+
+    @Override
+    public void deleteAdoptionProcess() {
+        //pendiente
     }
 }
