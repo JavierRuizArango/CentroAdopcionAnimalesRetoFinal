@@ -1,3 +1,3 @@
-public interface IRegistrerAnimal {
+public interface IRegistrer{
     public void registrer();
 }
