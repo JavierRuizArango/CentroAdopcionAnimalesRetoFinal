@@ -76,11 +76,7 @@ public class Dog extends Animal{
         super.setAvailable(available);
     }
 
-    @Override
-    public String showInfo  () {
-        String datosPadre = super.toString();
-        return "Datos padre: " + datosPadre +" ---- "+ " Datos hija: " +" "+"Raza: "+ getRace();
-    }
+
 
 
 

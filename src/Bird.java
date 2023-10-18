@@ -63,18 +63,6 @@ public class Bird extends Animal{
         super.setAvailable(available);
     }
 
-    @Override
-    public String toString() {
-        return super.toString();
-    }
 
-    @Override
-    public String mostrarDatos() {
-        return null;
-    }
 
-    @Override
-    public String desplazar() {
-        return null;
-    }
 }
