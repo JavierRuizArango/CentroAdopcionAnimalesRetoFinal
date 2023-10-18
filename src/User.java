@@ -1,4 +1,4 @@
-public abstract class User  implements IReadProcess {
+public abstract class User  implements IRead {
     private String name;
     private String lastname;
     private long cc;

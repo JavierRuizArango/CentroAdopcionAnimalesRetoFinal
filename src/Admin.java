@@ -1,4 +1,4 @@
-public abstract class Admin extends User implements IReadProcess {
+public abstract class Admin extends User implements IRead {
     private String name;
     private String lastname;
     private long cc;
