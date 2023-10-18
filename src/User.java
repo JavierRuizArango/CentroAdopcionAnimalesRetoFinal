@@ -1,4 +1,4 @@
-public abstract class User  implements IRegistrer {
+public abstract class User  implements IReadProcess {
     private String name;
     private String lastname;
     private long cc;
@@ -12,8 +12,6 @@ public abstract class User  implements IRegistrer {
         this.cc = cc;
         this.email = email;
     }
-
-    public abstract void register();
 
     public String getName() {
 
@@ -56,7 +54,5 @@ public abstract class User  implements IRegistrer {
     }
 
 
-
-
-
+    public abstract void readAnimal();
 }
