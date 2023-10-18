@@ -1,4 +1,4 @@
-public class Admin extends User implements IRegistrer {
+public abstract class Admin extends User implements IReadProcess {
     private String name;
     private String lastname;
     private long cc;
@@ -7,10 +7,6 @@ public class Admin extends User implements IRegistrer {
 
     public Admin() {
         super();
-    }
-
-    @Override
-    public void register() {
     }
 
     public String getName() {
@@ -57,6 +53,10 @@ public class Admin extends User implements IRegistrer {
 
     }
 
+    @Override
+    public void readAnimal() {
+
+    }
     public void upDateAnimal() {
 
     }
@@ -65,9 +65,22 @@ public class Admin extends User implements IRegistrer {
 
     }
 
-
-    @Override
-    public void registrer() {
+    public void createEmploee() {
 
     }
+
+
+    public void readEmploee() {
+
+    }
+
+    public void upDateEmploee() {
+
+    }
+
+    public void deleteEmploee() {
+
+    }
+
+
 }
