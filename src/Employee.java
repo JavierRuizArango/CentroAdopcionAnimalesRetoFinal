@@ -1,5 +1,6 @@
 
-public class Employee  extends User{
+
+public abstract class Employee  extends User implements IEmployee{
     private String name;
     private String lastname;
     private long cc;
