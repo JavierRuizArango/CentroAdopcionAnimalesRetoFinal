@@ -1,18 +1,6 @@
-public class Gato extends  Animal{
-
-    private String race;
-
-    public Gato(String name, String age, String species, String healStatus, String description, boolean available, String race) {
+public class Bird extends Animal{
+    public Bird(String name, String age, String species, String healStatus, String description, boolean available) {
         super(name, age, species, healStatus, description, available);
-        this.race = race;
-    }
-
-    public String getRace() {
-        return race;
-    }
-
-    public void setRace(String race) {
-        this.race = race;
     }
 
     @Override
@@ -45,8 +33,6 @@ public class Gato extends  Animal{
         super.setSpecies(species);
     }
 
-
-
     @Override
     public String getHealStatus() {
         return super.getHealStatus();
@@ -78,11 +64,14 @@ public class Gato extends  Animal{
     }
 
     @Override
-    public String mostrarDatos() {
-        String datosPadre = super.toString();
-        return "Datos padre: " + datosPadre +" ---- "+ " Datos hija: " +" "+"Raza: "+ getRace();
+    public String toString() {
+        return super.toString();
     }
 
+    @Override
+    public String mostrarDatos() {
+        return null;
+    }
 
     @Override
     public String desplazar() {
