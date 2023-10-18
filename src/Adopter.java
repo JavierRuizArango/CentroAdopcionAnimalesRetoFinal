@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Adopter extends User implements IRegistrer{
+public abstract class Adopter extends User implements IRead{
     private String name;
     private String lastname;
     private long cc;
@@ -11,12 +11,6 @@ public class Adopter extends User implements IRegistrer{
         super();
 
     }
-
-    @Override
-    public void register() {
-
-    }
-
     @Override
     public String getName() {
         return name;
@@ -56,22 +50,6 @@ public class Adopter extends User implements IRegistrer{
     public void setEmail(String email) {
         this.email = email;
     }
-
-
-    @Override
-    public void registrer() {
-            Scanner scanner = new Scanner(System.in);
-            try {
-                System.out.print("Ingrese un número: ");
-                String input = scanner.nextLine();
-                int numero = Integer.parseInt(input);
-                System.out.println("El número es: " + numero);
-            } catch (NumberFormatException e) {
-                System.out.println("No es un número válido.");
-            }
-
-        }
-
 
 
 }
