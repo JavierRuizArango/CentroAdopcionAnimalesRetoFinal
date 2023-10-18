@@ -1,6 +1,18 @@
-public class Ave  extends Animal{
-    public Ave(String name, String age, String species, String healStatus, String description, boolean available) {
+public class Cat extends  Animal{
+
+    private String race;
+
+    public Cat(String name, String age, String species, String healStatus, String description, boolean available, String race) {
         super(name, age, species, healStatus, description, available);
+        this.race = race;
+    }
+
+    public String getRace() {
+        return race;
+    }
+
+    public void setRace(String race) {
+        this.race = race;
     }
 
     @Override
@@ -33,6 +45,8 @@ public class Ave  extends Animal{
         super.setSpecies(species);
     }
 
+
+
     @Override
     public String getHealStatus() {
         return super.getHealStatus();
@@ -64,17 +78,11 @@ public class Ave  extends Animal{
     }
 
     @Override
-    public String toString() {
-        return super.toString();
+    public String showInfo() {
+        String datosPadre = super.toString();
+        return "Datos padre: " + datosPadre +" ---- "+ " Datos hija: " +" "+"Raza: "+ getRace();
     }
 
-    @Override
-    public String mostrarDatos() {
-        return null;
-    }
 
-    @Override
-    public String desplazar() {
-        return null;
-    }
+
 }

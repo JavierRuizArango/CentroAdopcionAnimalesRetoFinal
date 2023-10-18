@@ -1,10 +1,12 @@
-public abstract class User {
+public abstract class User  implements IReadProcess {
     private String name;
     private String lastname;
     private long cc;
     private String email;
 
-    public User(String name, String lastname, long cc, String email) {
+    protected String userType;
+
+    public User() {
         this.name = name;
         this.lastname = lastname;
         this.cc = cc;
@@ -50,4 +52,7 @@ public abstract class User {
 
         this.email = email;
     }
+
+
+    public abstract void readAnimal();
 }
