@@ -1,6 +1,6 @@
 
 
-public abstract class Employee  extends User implements IEmployee{
+public abstract class Employee  extends User implements IRead{
     private String name;
     private String lastname;
     private long cc;
@@ -70,24 +70,7 @@ public abstract class Employee  extends User implements IEmployee{
         this.usertype = usertype;
     }
 
-    @Override
-    public void createAdoptionProcess() {
-        //pendiente
-    }
 
-    @Override
-    public void readAdoptionProcess() {
-        //pendiente
 
-    }
 
-    @Override
-    public void updateAdoptionProcess() {
-        //pendiente
-    }
-
-    @Override
-    public void deleteAdoptionProcess() {
-        //pendiente
-    }
 }
