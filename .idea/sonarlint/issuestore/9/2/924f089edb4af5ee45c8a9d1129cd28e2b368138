@@ -1,0 +1,13 @@
+
+7
+java:S1220""Move this file to a named package.8à®Œ‰µ1
+Y
+java:S1854"<Remove this useless assignment to local variable "instance".(ÿ€§©8ß®Œ‰µ1
+B
+java:S2440"%Remove this instantiation of "Tools".(ÿ€§©8∞®Œ‰µ1
+J
+java:S1481"-Remove this unused "instance" local variable.(ÿ€§©8›®Œ‰µ1
+P
+java:S1128".Remove this unused import 'java.util.Scanner'.(“‹≈∏˙ˇˇˇˇ8ô¢◊‰µ1
+X
+java:S1128"6Remove this unused import 'java.awt.SystemColor.menu'.(‘Ê∑ìˇˇˇˇˇ8õ¢◊‰µ1

@@ -1,0 +1,29 @@
+
+7
+java:S1220""Move this file to a named package.8³œ²åµ1
+D
+java:S2189""Add an end condition to this loop.(ü§è½ùÿÿÿÿ8í ²åµ1
+\
+java:S1118":Add a private constructor to hide the implicit public one.(ïÅ¼•ıÿÿÿÿ8¡²åµ1
+G	java:S106"+Replace this use of System.out by a logger.(¹Ï„è8’¡²åµ1
+L	java:S106"+Replace this use of System.out by a logger.(ìŒú øÿÿÿÿ8”¡²åµ1
+L	java:S106"+Replace this use of System.out by a logger.(ÀÔÚŠùÿÿÿÿ8–¡²åµ1
+G	java:S106"+Replace this use of System.out by a logger.(¼õÙæ8™¡²åµ1
+L	java:S106"+Replace this use of System.out by a logger.(òÛÖ™ùÿÿÿÿ8›¡²åµ1
+L	java:S106"+Replace this use of System.out by a logger.(¯ìíßúÿÿÿÿ8Ç¡²åµ1
+L	java:S106"+Replace this use of System.out by a logger.(úçËùÿÿÿÿ8Ì¡²åµ1
+G	java:S106"+Replace this use of System.out by a logger.(µÙ¡Ó8Ñ¡²åµ1
+G	java:S106"+Replace this use of System.out by a logger.(àµÚ‚8Ò¡²åµ1
+L	java:S106 "+Replace this use of System.out by a logger.(ÌŒÓúÿÿÿÿ8Ô¡²åµ1
+L	java:S106!"+Replace this use of System.out by a logger.(û„éÚıÿÿÿÿ8Ö¡²åµ1
+G	java:S106""+Replace this use of System.out by a logger.(ñÈã8Ø¡²åµ1
+F	java:S106#"+Replace this use of System.out by a logger.(ºŞ³n8Ù¡²åµ1
+G	java:S106$"+Replace this use of System.out by a logger.(Ò¬ÿé8Ü¡²åµ1
+L	java:S106,"+Replace this use of System.out by a logger.(ò®­óøÿÿÿÿ8à¡²åµ1
+L	java:S106-"+Replace this use of System.out by a logger.(úçËùÿÿÿÿ8ä¡²åµ1
+G	java:S106."+Replace this use of System.out by a logger.(µÙ¡Ó8å¡²åµ1
+G	java:S106/"+Replace this use of System.out by a logger.(àµÚ‚8ç¡²åµ1
+L	java:S1060"+Replace this use of System.out by a logger.(ÇØöûÿÿÿÿ8ê¡²åµ1
+L	java:S106F"+Replace this use of System.out by a logger.(ŸÀøºıÿÿÿÿ8ó¡²åµ1
+G	java:S106S"+Replace this use of System.out by a logger.(ä¯ûí8ù¡²åµ1
+L	java:S106W"+Replace this use of System.out by a logger.(ŸÀøºıÿÿÿÿ8ú¡²åµ1
