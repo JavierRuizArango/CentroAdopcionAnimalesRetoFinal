@@ -4,7 +4,7 @@ public abstract class User  implements IRead {
     private long cc;
     private String email;
 
-    protected String userType;
+
 
     public User() {
         this.name = name;
