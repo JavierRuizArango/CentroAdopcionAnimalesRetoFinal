@@ -1,7 +1,11 @@
-public class AdoptionProcess {
+package animalProcess;
 
-    String idProcess;
-    String Adopter;
+public class adoptionProcess {
+
+    int idProcess;
+    int Adopter;
+    int idemployee;
+    int idAnimal;
 
     String date;
 
