@@ -1,6 +1,4 @@
-import java.util.Scanner;
-
-import static java.awt.SystemColor.menu;
+import tools.Tools;
 
 public class Main {
 
