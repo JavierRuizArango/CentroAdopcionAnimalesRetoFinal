@@ -1,96 +1,57 @@
+package tools;
 import java.util.Scanner;
-
 public class Tools {
+    // Declara una variable para almacenar la respuesta del usuario
+    public static String respuesta;
+    public static boolean salir;
 
-    public  static void menu(){
+    public static void menu() {
+        // Crea un bucle do-while para iterar sobre las opciones del menú
+         boolean  salir = false; // Variable para controlar la salida del bucle
+        do {
+            // Muestra las opciones del menú al usuario
+            System.out.println("¿Quién eres? \n");
+            System.out.println("1. Administrador ");
+            System.out.println("2. Empleado");
+            System.out.println("3. Adoptante");
+            System.out.println("4. Salir");
+            System.out.println("Ingrese una opción");
 
+            // Pide al usuario que seleccione una opción
+            Scanner scanner = new Scanner(System.in);
+            respuesta = scanner.next();
 
-            // Declara una variable para almacenar la respuesta del usuario
-            String respuesta;
-
-            // Crea un bucle do-while para iterar sobre las opciones del menú
-            do {
-                // Muestra las opciones del menú al usuario
-                System.out.println("¿Quién eres?");
-                System.out.println("1. Administrador");
-                System.out.println("2. Empleado");
-                System.out.println("3. Adoptante");
-                System.out.println("4. Salir");
-
-                // Pide al usuario que seleccione una opción
-                Scanner scanner = new Scanner(System.in);
-                respuesta = scanner.nextLine();
-
-                // Evalua la opción del usuario
-                switch (respuesta) {
-                    case "1":
-                        // Muestra el sub menú para administradores
-                        System.out.println("¿Qué quieres hacer como administrador?");
-                        System.out.println("1. Crear un nuevo Animal");
-                        System.out.println("2. Actualizar un Animal existente");
-                        System.out.println("3. Eliminar un Animal");
-                        System.out.println("4. Crear un nuevo Empleado");
-                        System.out.println("5. Actualizar un Empleado");
-                        System.out.println("6. Eliminar un Empleado");
-                        System.out.println("7. Ver lista de Animales");
-                        System.out.println("8. Ver Lista Empleados");
-                        System.out.println("9. Salir del sub menú");
-                        // Pide al usuario que seleccione una opción
-                        String respuestaAdmin = scanner.nextLine();
-
-
-
-                        do {
-                            // Pide al usuario que seleccione una opción del sub menú
-                            System.out.println("¿Qué quieres hacer?");
-                            System.out.println("1. Crear un nuevo Animal");
-                            System.out.println("2. Actualizar un Animal existente");
-                            System.out.println("3. Eliminar un Animal");
-
-
-                            // Pide al usuario que seleccione una opción
-                            scanner = new Scanner(System.in);
-                            respuesta = scanner.nextLine();
-
-                            // Evalua la opción del usuario
-                            switch (respuesta) {
-                                case "1":
-                                    // Crea un nuevo usuario
-                                    break;
-                                case "2":
-                                    // Actualiza un usuario existente
-                                    break;
-                                case "3":
-                                    // Elimina un usuario
-                                    break;
-                                case "4":
-                                    // Sale del sub menú
-                                    break;
-                                default:
-                                    // Opción inválida
-                                    System.out.println("Opción inválida.");
-                                    break;
-                            }
-                        } while (!respuesta.equals("4"));
-                        break;
-                    case "2":
-                        // Muestra el sub menú para empleados
-                        break;
-                    case "3":
-                        // Muestra el sub menú para adoptantes
-                        break;
-                    case "4":
-                        // Sale de la aplicación
-                        System.out.println("Hasta pronto!");
-                        break;
-                    default:
-                        // Opción inválida
-                        System.out.println("Opción inválida.");
-                        break;
-                }
-            } while (true);
-        }
+            // Evalua la opción del usuario
+            switch (respuesta) {
+                case "1":
+                    // Muestra el sub menú para administradores
+                    AdminTools.menuAdmin(respuesta);
+                    // Pide al usuario que seleccione una opción
+                    String respuestaAdmin = scanner.nextLine();
+                    break;
+                case "2":
+                    // Muestra el sub menú para empleados
+                    EmployeeTools.menuEmployee(respuesta);
+                    String respuestaEmployee = scanner.nextLine();
+                    break;
+                case "3":
+                    // Muestra el sub menú para adoptantes
+                    Adoptertools.menuAdopter(respuesta);
+                    String respuestaAdopter = scanner.nextLine();
+                    break;
+                case "4":
+                    // Sale de la aplicación
+                    salir = true; // Establece salir en true para terminar el bucle
+                    System.out.println("Hasta pronto!");
+                    break;
+                default:
+                    // Opción inválida
+                    System.out.println("Opción inválida.");
+                    break;
+            }
+        } while (!salir); // El bucle se ejecuta hasta que salir sea true
     }
+}
 
 
 
