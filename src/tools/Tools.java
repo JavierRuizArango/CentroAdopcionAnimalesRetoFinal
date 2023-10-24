@@ -34,8 +34,9 @@ public class Tools {
                         System.out.println("6. Eliminar un Empleado");
                         System.out.println("7. Ver lista de Animales");
                         System.out.println("8. Ver Lista Empleados");
+                        System.out.println("9. Salir del sub menú");
                         // Pide al usuario que seleccione una opción
-
+                        String respuestaAdmin = scanner.nextLine();
 
 
 
@@ -45,7 +46,7 @@ public class Tools {
                             System.out.println("1. Crear un nuevo Animal");
                             System.out.println("2. Actualizar un Animal existente");
                             System.out.println("3. Eliminar un Animal");
-                            System.out.println("4. Salir del sub menú");
+
 
                             // Pide al usuario que seleccione una opción
                             scanner = new Scanner(System.in);
