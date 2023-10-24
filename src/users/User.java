@@ -1,3 +1,7 @@
+package users;
+
+import interfaces.IRead;
+
 public abstract class User  implements IRead {
     private String name;
     private String lastname;

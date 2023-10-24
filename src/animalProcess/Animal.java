@@ -1,3 +1,5 @@
+package animalProcess;
+
 public abstract  class Animal {
     private String name;
     private String age;
