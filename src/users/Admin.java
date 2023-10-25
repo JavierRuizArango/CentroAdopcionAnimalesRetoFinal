@@ -1,9 +1,10 @@
 package users;
+import animalProcess.Animal;
 import interfaces.IRead;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public abstract class Admin extends User implements IRead {
+public  class Admin extends User implements IRead {
     private String name;
     private String lastname;
     private long cc;
@@ -90,8 +91,9 @@ public abstract class Admin extends User implements IRead {
         this.userType = userType;
     }
 
-    public void createAnimal() {
-
+    public static void createAnimal() {
+        Animal animal = new Animal();
+        animal.create();
     }
 
     @Override

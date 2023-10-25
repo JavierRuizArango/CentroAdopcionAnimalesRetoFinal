@@ -1,5 +1,7 @@
 package tools;
 
+import users.Admin;
+
 import java.util.Scanner;
 
 public class AdminTools {
@@ -27,7 +29,8 @@ public class AdminTools {
 
             switch (respuestaSubMenu) {
                 case "1":
-                    System.out.println("1. Se crea un nuevo animal");
+                    Admin admin = new Admin();
+                    Admin.createAnimal();
                     System.out.println("¿Desea realizar otra acción? (Sí/No)");
                     String otraAccion1 = scanner.nextLine().toLowerCase();
                     if (otraAccion1.equals("no")) {

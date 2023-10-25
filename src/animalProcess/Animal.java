@@ -1,21 +1,19 @@
 package animalProcess;
 
-public abstract  class Animal {
-    private String name;
+import tools.DataBase;
+
+import java.util.Scanner;
+
+public class Animal {
+    Scanner sc = new Scanner(System.in);
+    private int id;
+    private static String name;
     private String age;
     private String species;
     private String healStatus;
     private String description;
     private boolean available;
 
-    public Animal(String name, String age,String species, String healStatus, String description, boolean available) {
-        this.name = name;
-        this.age = age;
-        this.species = species;
-        this.healStatus = healStatus;
-        this.description = description;
-        this.available = available;
-    }
 
 
     public String getName() {
@@ -59,12 +57,41 @@ public abstract  class Animal {
         this.description = description;
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        if(1==1){
+            this.id = id;
+        }
+
+    }
+
     public boolean isAvailable() {
         return available;
     }
 
     public void setAvailable(boolean available) {
         this.available = available;
+    }
+    public void create(){
+        DataBase db = new DataBase();
+        setId(DataBase.generateId());
+        System.out.println("Digite nombre");
+        setName(this.sc.nextLine());
+        System.out.println("Digite Edad");
+        setAge(this.sc.nextLine());
+        System.out.println("Digite especie");
+        setSpecies(this.sc.nextLine());
+        System.out.println("Digite descripcion");
+        setDescription(this.sc.nextLine());
+        System.out.println("Digite Estado de Salud");
+        setHealStatus(this.sc.nextLine());
+        System.out.println("Disponibilidad " + this.available);
+
+        db.createAnimal(getId(), getName(),getAge(),getSpecies(),getDescription(),getHealStatus(), true );
+
     }
 
 }
