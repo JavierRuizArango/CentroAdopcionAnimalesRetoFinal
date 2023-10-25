@@ -51,7 +51,7 @@ public class EmployeeTools {
                     }
                 case "5":
                     System.out.println("9. Salir del sub menú");
-                    Tools.salir= false;
+                    regresarAlMenuPrincipal = true;
                     break;
             }
         } while (!regresarAlMenuPrincipal);

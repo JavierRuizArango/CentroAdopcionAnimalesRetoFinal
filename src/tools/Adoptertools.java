@@ -50,7 +50,7 @@ public class Adoptertools {
                 break;
             case "5":
                 System.out.println("con esta opcion Sale del sub menú");
-                Tools.salir= false;
+                regresarAlMenuPrincipal = true;
                 break;
             }
         } while (!regresarAlMenuPrincipal);
