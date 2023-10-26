@@ -1,6 +1,7 @@
 package users;
 
 import interfaces.IRead;
+import org.apache.poi.ss.usermodel.Workbook;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -95,5 +96,7 @@ public abstract class User implements IRead {
 
 
     public abstract void readAnimal();
+
+    public abstract void readAnimal(Workbook workbook);
 }
 
