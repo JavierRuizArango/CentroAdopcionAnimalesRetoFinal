@@ -94,4 +94,21 @@ public class Animal {
 
     }
 
+    public void upDate(){
+        DataBase db = new DataBase();
+        System.out.println("Digite nombre");
+        setName(this.sc.nextLine());
+        System.out.println("Digite Edad");
+        setAge(this.sc.nextLine());
+        System.out.println("Digite especie");
+        setSpecies(this.sc.nextLine());
+        System.out.println("Digite descripcion");
+        setDescription(this.sc.nextLine());
+        System.out.println("Digite Estado de Salud");
+        setHealStatus(this.sc.nextLine());
+        System.out.println("Disponibilidad " + this.available);
+        db.createAnimal(getId(), getName(),getAge(),getSpecies(),getDescription(),getHealStatus(), true );
+    }
+
 }
+

@@ -108,6 +108,4 @@ public  class Admin extends User implements IRead {
     public void deleteAnimal() {
 
     }
-
-
 }

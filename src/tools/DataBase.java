@@ -10,6 +10,7 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
+
 public class DataBase {
     private Workbook workbook;
     private Sheet sheet1;
@@ -40,7 +41,7 @@ public class DataBase {
             e.printStackTrace();
         }
     }
-
+    // metodo que creea un animal
     public void createAnimal(int id, String name, String age, String specie, String healStatus, String description, boolean available) {
         int lastRowNum = sheet1.getLastRowNum();
         Row row = sheet1.createRow(lastRowNum + 1);
@@ -57,6 +58,26 @@ public class DataBase {
         this.escribirArchivo();
     }
 
+    //metodo que actualiza un animal
+    public void updateAnimal(int id, String name, String age, String specie, String healStatus, String description, boolean available) {
+        for (int rowNum = 1; rowNum <= sheet1.getLastRowNum(); rowNum++) {
+            Row row = sheet1.getRow(rowNum);
+            int currentId = (int) row.getCell(0).getNumericCellValue();
+            if (currentId == id) {
+                row.getCell(1).setCellValue(name);
+                row.getCell(2).setCellValue(age);
+                row.getCell(3).setCellValue(specie);
+                row.getCell(4).setCellValue(healStatus);
+                row.getCell(5).setCellValue(description);
+                row.getCell(6).setCellValue(available);
+                this.escribirArchivo();
+                return;
+            }
+        }
+        // Si no se encuentra el animal con el ID proporcionado, puedes manejar este caso como desees, por ejemplo, lanzando una excepción.
+        throw new IllegalArgumentException("Animal con ID " + id + " no encontrado.");
+    }
+
     public void escribirArchivo() {
         try {
             FileOutputStream outputStream = new FileOutputStream("Database.xlsx");
@@ -71,10 +92,3 @@ public class DataBase {
         return (int) (Math.random() * 1000);
     }
 }
-
-
-
-
-
-
-
