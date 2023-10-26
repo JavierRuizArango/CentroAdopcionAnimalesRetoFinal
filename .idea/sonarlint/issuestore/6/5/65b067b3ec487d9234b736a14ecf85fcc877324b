@@ -1,0 +1,19 @@
+
+„
+java:S4165"bRemove this useless assignment; "name" already holds the assigned value along all execution paths.(É´“ıÿÿÿÿ8Î…¶µ¶1
+…
+java:S4165"cRemove this useless assignment; "email" already holds the assigned value along all execution paths.(ÍùÅ‡øÿÿÿÿ8¥É»µ¶1
+ˆ
+java:S4165"fRemove this useless assignment; "lastname" already holds the assigned value along all execution paths.(Ú¯™¯ÿÿÿÿÿ8Ï…¶µ¶1
+‚
+java:S4165"`Remove this useless assignment; "cc" already holds the assigned value along all execution paths.(Í½¥†şÿÿÿÿ8¥É»µ¶1
+U
+java:S5993"9Change the visibility of this constructor to "protected".(øş±,8©É»µ¶1
+Q
+java:S1656"/Remove or correct this useless self-assignment.(É´“ıÿÿÿÿ8é†¶µ¶1
+Q
+java:S1656"/Remove or correct this useless self-assignment.(Í½¥†şÿÿÿÿ8ÄÉ»µ¶1
+Q
+java:S1656"/Remove or correct this useless self-assignment.(Ú¯™¯ÿÿÿÿÿ8é†¶µ¶1
+Q
+java:S1656"/Remove or correct this useless self-assignment.(ÍùÅ‡øÿÿÿÿ8ÄÉ»µ¶1

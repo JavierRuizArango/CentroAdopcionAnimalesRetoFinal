@@ -1,13 +1,9 @@
 
 7
-java:S1220""Move this file to a named package.8ˆ¨Îäµ1
+java:S1220""Move this file to a named package.8»Ù“¶1
 Y
-java:S1854"<Remove this useless assignment to local variable "instance".(ØÛ¤©8§¨Îäµ1
+java:S1854"<Remove this useless assignment to local variable "instance".(ØÛ¤©8ª»µ¶1
 B
-java:S2440"%Remove this instantiation of "Tools".(ØÛ¤©8°¨Îäµ1
+java:S2440"%Remove this instantiation of "Tools".(ØÛ¤©8´»µ¶1
 J
-java:S1481"-Remove this unused "instance" local variable.(ØÛ¤©8İ¨Îäµ1
-P
-java:S1128".Remove this unused import 'java.util.Scanner'.(ÒÜÅ¸úÿÿÿÿ8™¢×äµ1
-X
-java:S1128"6Remove this unused import 'java.awt.SystemColor.menu'.(Ôæ·“ÿÿÿÿÿ8›¢×äµ1
+java:S1481"-Remove this unused "instance" local variable.(ØÛ¤©8À»µ¶1
