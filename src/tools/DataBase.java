@@ -1,5 +1,6 @@
 package tools;
 
+import animalProcess.Animal;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
@@ -41,6 +42,7 @@ public class DataBase {
             e.printStackTrace();
         }
     }
+
     // metodo que creea un animal
     public void createAnimal(int id, String name, String age, String specie, String healStatus, String description, boolean available) {
         int lastRowNum = sheet1.getLastRowNum();
@@ -91,4 +93,5 @@ public class DataBase {
     public static int generateId() {
         return (int) (Math.random() * 1000);
     }
+
 }

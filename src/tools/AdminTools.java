@@ -10,6 +10,7 @@ public class AdminTools {
         Scanner scanner = new Scanner(System.in);
 
         boolean regresarAlMenuPrincipal = false;
+        Admin admin = new Admin();
 
         do {
             System.out.println("¿Qué quieres hacer como administrador?\n");
@@ -24,12 +25,11 @@ public class AdminTools {
             System.out.println("7. Actualizar un Empleado");
             System.out.println("8. Eliminar un Empleado");
             System.out.println("9. Regresar al menú anterior");
+            ////////////////////////////////////////////////
             System.out.println("Ingrese una opción");
             String respuestaSubMenu = scanner.nextLine();
-
             switch (respuestaSubMenu) {
                 case "1":
-                    Admin admin = new Admin();
                     Admin.createAnimal();
                     System.out.println("¿Desea realizar otra acción? (Sí/No)");
                     String otraAccion1 = scanner.nextLine().toLowerCase();
@@ -39,6 +39,7 @@ public class AdminTools {
                     // Agrega aquí la lógica para crear un nuevo animal
                     break;
                 case "2":
+                    admin.readAnimal();
                     System.out.println("2. Se mira la lista de animales");
                     System.out.println("¿Desea realizar otra acción? (Sí/No)");
                     String otraAccion2 = scanner.nextLine().toLowerCase();
@@ -48,6 +49,7 @@ public class AdminTools {
                     // Agrega aquí la lógica para mostrar la lista de animales
                     break;
                 case "3":
+                    admin.upDateAnimal();
                     System.out.println("3. Se actualiza un animal");
                     System.out.println("¿Desea realizar otra acción? (Sí/No)");
                     String otraAccion3 = scanner.nextLine().toLowerCase();

@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Animal {
     Scanner sc = new Scanner(System.in);
     private int id;
-    private static String name;
+    private  String name;
     private String age;
     private String species;
     private String healStatus;
@@ -75,7 +75,7 @@ public class Animal {
     public void setAvailable(boolean available) {
         this.available = available;
     }
-    public void create(){
+    public void create() {
         DataBase db = new DataBase();
         setId(DataBase.generateId());
         System.out.println("Digite nombre");
@@ -88,27 +88,42 @@ public class Animal {
         setDescription(this.sc.nextLine());
         System.out.println("Digite Estado de Salud");
         setHealStatus(this.sc.nextLine());
-        System.out.println("Disponibilidad " + this.available);
 
-        db.createAnimal(getId(), getName(),getAge(),getSpecies(),getDescription(),getHealStatus(), true );
+        System.out.println("¿Está disponible? (true/false): ");
+        setAvailable(this.sc.nextBoolean());
 
+        System.out.println("Disponibilidad: " + (this.available ? "disponible" : "no disponible"));
+
+        db.createAnimal(getId(), getName(), getAge(), getSpecies(), getDescription(), getHealStatus(), isAvailable());
     }
 
-    public void upDate(){
+
+    public void upDate() {
         DataBase db = new DataBase();
+
         System.out.println("Digite nombre");
         setName(this.sc.nextLine());
         System.out.println("Digite Edad");
         setAge(this.sc.nextLine());
         System.out.println("Digite especie");
         setSpecies(this.sc.nextLine());
-        System.out.println("Digite descripcion");
+        System.out.println("Digite descripción");
         setDescription(this.sc.nextLine());
         System.out.println("Digite Estado de Salud");
         setHealStatus(this.sc.nextLine());
-        System.out.println("Disponibilidad " + this.available);
-        db.createAnimal(getId(), getName(),getAge(),getSpecies(),getDescription(),getHealStatus(), true );
+
+        System.out.println("¿Está disponible? (true/false): ");
+        setAvailable(this.sc.nextBoolean());
+
+        System.out.println("Disponibilidad: " + (this.available ? "disponible" : "no disponible"));
+
+        // Luego, actualiza la información en la base de datos usando el método correspondiente
+        db.updateAnimal(getId(), getName(), getAge(), getSpecies(), getHealStatus(), getDescription(), isAvailable());
     }
 
+
+
+
 }
+
 
